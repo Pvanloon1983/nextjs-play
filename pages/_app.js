@@ -23,6 +23,9 @@ export default function App({ Component, pageProps}) {
             <li>
               <Link className={router.pathname == "/gebedstijden" ? "active" : ""} href="/gebedstijden">Gebedstijden</Link>
             </li>
+            <li>
+              <Link className={router.pathname == "/boeken" ? "active" : ""} href="/boeken">Boeken</Link>
+            </li>
           </ul>
         </nav>
       </div>
