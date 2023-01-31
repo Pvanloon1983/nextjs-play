@@ -16,12 +16,12 @@ export default function Boeken(props) {
 }
 
 export async function getStaticProps() {
-  const response = await fetch("https://api.sheety.co/e89030eb1c3567466d66dd207e291068/boekenLucideInkt/boeken")
+  const response = await fetch("https://script.google.com/macros/s/AKfycbxif9U6iXePeKQjFRCyb0jOr1R2hRzCJ7Ws-bQ9zXGzrJppulgxw12P7FFfKc-NCYt9VA/exec")
   const data = await response.json()
 
   return {
     props: {
-      boeken: data.boeken
+      boeken: data.data
     },
     revalidate: 1
   }

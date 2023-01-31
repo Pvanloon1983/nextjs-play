@@ -4,7 +4,7 @@ export default function Gebedstijden(props) {
   let count = -1;
   const now = new Date();
   let day = date.addDays(now, +`${count}`);
-  console.log(date.format(day, 'DD-MM-YYYY'));
+  // console.log(date.format(day, 'DD-MM-YYYY'));
   let dynamicDate = date.format(day, 'DD-MM-YYYY');
 
   return (
@@ -44,13 +44,13 @@ export default function Gebedstijden(props) {
 }
 
 export async function getStaticProps() {
-  const response = await fetch("https://api.sheety.co/e89030eb1c3567466d66dd207e291068/gebedstijdenEmmen/emmen")
+  const response = await fetch("https://script.google.com/macros/s/AKfycbxXmKC9yltzyOCSNWs7FiYxKirgxO_17j8033QEBuSeOkFyyyM89w85FtQ7lZFLlbQv/exec")
   const data = await response.json()
 
   return {
     props: {
       plaats: "Emmen",
-      vandaag: data.emmen
+      vandaag: data.data
     },
     revalidate: 3
   }
