@@ -5,7 +5,7 @@ export default function Boeken(props) {
 <Head>
   <title>Boeken</title>
   <meta property="og:title" content="Boeken" key="boeken" />
-  <meta http-equiv="refresh" content="3600" key="refresh"/>
+  <meta httpEquiv="refresh" content="5" key="refresh"/>
 </Head>
 
  return (
