@@ -23,6 +23,6 @@ export async function getStaticProps() {
     props: {
       boeken: data.data
     },
-    revalidate: 1
+    revalidate: 3
   }
 }
