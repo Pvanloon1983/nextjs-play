@@ -12,7 +12,7 @@ export default function Gebedstijden(props) {
     <>
       <Head>
         <title>Gebedstijden</title>
-        <meta property="og:title" content="Gebedstijden" key="title" />
+        <meta property="og:title" content="Gebedstijden" key="gebedstijden" />
         <meta http-equiv="refresh" content="3600" key="refresh"/>
       </Head>
 
