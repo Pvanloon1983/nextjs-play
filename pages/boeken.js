@@ -1,5 +1,14 @@
+import Head from 'next/head';
+
 export default function Boeken(props) {
-  return (
+
+<Head>
+  <title>Boeken</title>
+  <meta property="og:title" content="Boeken" key="title" />
+  <meta http-equiv="refresh" content="3600" key="refresh"/>
+</Head>
+
+ return (
     <>
       <h2>Boeken</h2>
       {props.boeken.map((boek, index) => {
@@ -23,6 +32,6 @@ export async function getStaticProps() {
     props: {
       boeken: data.data
     },
-    revalidate: 3
+    revalidate: 1
   }
 }

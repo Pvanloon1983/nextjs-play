@@ -1,4 +1,5 @@
 import date from 'date-and-time';
+import Head from 'next/head';
 
 export default function Gebedstijden(props) {
   let count = -1;
@@ -7,8 +8,14 @@ export default function Gebedstijden(props) {
   // console.log(date.format(day, 'DD-MM-YYYY'));
   let dynamicDate = date.format(day, 'DD-MM-YYYY');
 
-  return (
+   return (
     <>
+      <Head>
+        <title>Gebedstijden</title>
+        <meta property="og:title" content="Gebedstijden" key="title" />
+        <meta http-equiv="refresh" content="3600" key="refresh"/>
+      </Head>
+
       <h2>Gebedstijden van {props.plaats}</h2>
 
       <div style={{ overflowX: "auto" }}>
@@ -52,6 +59,6 @@ export async function getStaticProps() {
       plaats: "Emmen",
       vandaag: data.data
     },
-    revalidate: 3
+    revalidate: 1
   }
 }
