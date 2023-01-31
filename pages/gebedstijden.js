@@ -52,6 +52,6 @@ export async function getStaticProps() {
       plaats: "Emmen",
       vandaag: data.data
     },
-    revalidate: 3
+    revalidate: 60
   }
 }

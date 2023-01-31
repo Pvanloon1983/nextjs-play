@@ -16,6 +16,6 @@ export async function getStaticProps() {
     props: {
       repoCount: data.public_repos
     },
-    revalidate: 3
+    revalidate: 60
   }
 }
